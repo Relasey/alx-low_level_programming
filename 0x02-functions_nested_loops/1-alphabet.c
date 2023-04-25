@@ -1,9 +1,10 @@
 #include "main.h"
 
 /**
- * main - print alphabets in lowercase
+ *  print_alphabets - print alphabets in lowercase
  *
  */
+
 void print_alphabet(void)
 {
 	int alphabet = 97;
