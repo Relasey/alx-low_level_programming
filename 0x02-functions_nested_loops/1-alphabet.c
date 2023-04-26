@@ -5,7 +5,7 @@
  *
  */
 
-void print_alphabet(void)
+void print_alphabets(void)
 {
 	int alphabet = 97;
 
