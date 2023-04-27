@@ -6,12 +6,18 @@
  */
 void print_alphabet_x10(void)
 {
-	int alphabet = 0;
+	int count = 1;
 
-	while (alphabet < 10)
+	while (count <= 10)
 	{
-		_putchar(alphabet);
-		alphabet++;
+		int alphabet = 97;
+
+		while (alphabet < 123)
+		{
+			_putchar(alphabet);
+			alphabet++;
+		}
+		_putchar('\n');
+		count++;
 	}
-	_putchar('\n');
 }
