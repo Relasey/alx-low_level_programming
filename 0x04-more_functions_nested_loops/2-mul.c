@@ -1,16 +1,15 @@
 #include "main.h"
+#include <stdio.h>
+
 /**
-* print_numbers - printing numbers fron 0 to 9
-* Return: 0
+* mul - checking a function that multiples two integers
+* @a: first integer
+* @b: second integer
+* Return: always 0
 */
-
-void print_numbers(void)
+int mul(int a, int b)
 {
-	char c;
+	int result = a * b;
 
-	for (c = 48; c <= 57; c++)
-	{
-		_putchar(c);
-	}
-	_putchar('\n');
+	return (result);
 }

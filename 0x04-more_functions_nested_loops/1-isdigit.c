@@ -1,15 +1,14 @@
 #include "main.h"
-#include <stdio.h>
 
-/**
-* mul - checking a function that multiples two integers
-* @a: first integer
-* @b: second integer
-* Return: always 0
-*/
-int mul(int a, int b)
+/**check for a digit
+ *
+ *Return: Always 0
+ */
+int _isdigit(int c)
 {
-	int result = a * b;
+	
 
-	return (result);
-}
+
+	
+
+
