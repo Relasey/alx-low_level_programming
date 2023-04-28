@@ -1,17 +1,20 @@
 #include "main.h"
-
 /**
- * print_line - drwaing straight line in the terminal
- * @n: the character to be used
- * Return: always 0(Success)
- */
-void print_line(int n)
+* more_numbers - printing numbers 10 times from 0 to 14
+* Return: void
+*/
+void more_numbers(void)
 {
-	int f;
+	int d, j;
 
-	for (f = 0; f < n; f++)
+	for (d = 1; d <= 10; d++)
 	{
-		_putchar('_');
+		for (j = 0; j <= 14; j++)
+		{
+			if (j >= 10)
+				_putchar('1');
+			_putchar(j % 10 + '0');
+		}
+		_putchar('\n');
 	}
-	_putchar('\n');
 }
