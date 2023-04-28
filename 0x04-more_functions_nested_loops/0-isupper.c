@@ -6,6 +6,7 @@
  * Return: 1 if c is uppercase
  * otherwise return 0
  */
+
 int _isupper(int c)
 {
 
