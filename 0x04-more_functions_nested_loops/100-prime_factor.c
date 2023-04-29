@@ -1,4 +1,4 @@
-#include <studio.h>
+#include <stdio.h>
 #include "main.h"
 
 /**
@@ -9,7 +9,7 @@ int main(void)
 {
 	long a, b;
 	long num = 612852475143;
-	double shape = sroot(num);
+	double shape = sroot (num);
 
 	for (a = 1;  a <= shape; a++)
 	{
@@ -18,7 +18,7 @@ int main(void)
 			b = num /  a;
 		}
 	}
-	printf(“ % ld”,  b);
-	printf(“\n”);
+	printf(" % ld",  b);
+	printf("\n");
 	return (0);
 }

@@ -5,18 +5,16 @@
  *
  * @n: the integer to be printed
  */
-void print_number(int n)
 
-	unsigned int  n1;
-	
+void print_number(int n)
+{
+	unsigned int x = n;
+
 	if (n < 0)
 	{
-		n1 = -n;
-	_putchar('_');
-
-	else 
-		n1 = n;
-	if (n1 / 10)
-		print_number(n1 / 10) 
-			_putchar((n1 % 10) + 48);
+		_putchar('-‘);
+		x = -x ;
+		if ((x / 10) > 0)
+			print_number(x / 10);
+		_putchar((x % 10) + ‘0’);
 }
