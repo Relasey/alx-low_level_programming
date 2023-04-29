@@ -1,11 +1,12 @@
 #include "main.h"
 
-/*
- *_1sdigit - check if numbers are 0 - 9
- *@c: char to be checked
+/**
+ * _isdigit - input
  *
- *Return: 0 or 1
-*/
+ * Description: define if a character is a number
+ * @c: charater
+ * Return: 1 yes 0 no
+ */
 
 int _isdigit(int c)
 {
