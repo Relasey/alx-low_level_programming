@@ -2,23 +2,22 @@
 
 /**
 *puts2 - prints characteristics of a string
+*followed by a new line
 *@str: the used string reference
 *Return: 0
 */
 
 void puts2(char *str)
 {
-	int z = 0;
+	int i = 0;
 
-	while (str[z] != '\0')
+	while (str[i] != '\0')
 	{
-		if (z % 2 == 0)
+		if (i % 2 == 0)
 		{
-			_putchar(str[z]);
-			{
-				z++;
-			}
-			_putchar('\n');
+			_putchar(str[i]);
 		}
+		i++;
 	}
+	_putchar('\n');
 }
