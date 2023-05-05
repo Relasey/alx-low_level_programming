@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * _strncat - function is similar to the _strcat
  * using bytes from src
