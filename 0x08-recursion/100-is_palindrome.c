@@ -13,19 +13,19 @@ int _strlen(char *str)
 }
 /**
  * check_palindrome - checks to see if a string is a palindrome
- * @l: is the index
- * @r: length of the string
- * @q: possible palindrome
+ * @a: left hand index
+ * @q: right hand index
+ * @s: possible palindrome
  * Return: 1 if palindrome 0 if not
  */
-int check_palindrome(int 1, int r, char *q)
+int check_palindrome(int a, int q, char *s)
 {
-	if (l >= r)
+	if (a >= q)
 		return (1);
-	else if (q[l] != q[r])
+	else if (s[a] != s[q])
 		return (0);
 	else
-		return (check_palindrome(l + 1, r - 1, q));
+		return (check_palindrome(a + 1, q - 1, s));
 }
 /**
  * is_palindrome - states if a string is a palindrome
