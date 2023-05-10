@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * wildcmp - Compare two strings allowing for wildcard char
- * @s1: String being compared
- * @s2: String being compared against
+ * wildcmp - function that compares two strings and returns
+ * @s1: String 1 being compared
+ * @s2: String 2 being compared against contains a special character *
  *
  * Return: 1 if considered identical, 0 otherwise
  */
