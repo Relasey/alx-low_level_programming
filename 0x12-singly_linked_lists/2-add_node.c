@@ -12,7 +12,8 @@ int _strlen(const char *s)
 {
 	int p = 0;
 
-	for (; s[p] != '\0'; p++);
+	while (*(s + p) != '\0');
+	p++;
 
 	return (p);
 }
