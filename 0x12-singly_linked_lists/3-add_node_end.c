@@ -22,24 +22,37 @@ unsigned int _strlen(const char *s)
 /**
  * _strdup - function that adds a new node at the end
  * @str: String
- * Return: Pointer
+ * Return: pointer
 **/
 
 char *_strdup(const char *str)
 {
-	unsigned int len = _strlen(str);
-	char *s = (char *)malloc((len + 1) * sizeof(char));
+	unsigned int q, length;
+	char *s;
 
-	if (s == 0)
+	if (str == NULL)
 	{
-		return (0);
+		return (NULL);
 	}
-	while (unsigned int p = 0; (p <= len); p++)
+	else
 	{
-		s[p] = str[p];
-	}
+		length = _strlen(str);
 
-	return (s);
+		s = (char *)malloc((length + 1) * sizeof(char));
+
+		if (s == NULL)
+		{
+			return (NULL);
+		}
+		else
+		{
+			for (q = 0; q < (length + 1); q++)
+			{
+				s[q] = str[q];
+			}
+			return (s);
+		}
+	}
 }
 
 /**
