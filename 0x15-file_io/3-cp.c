@@ -45,7 +45,6 @@ void close_file(int fd)
  * main - Copies the contents of a file to another file
  * @argc: The number of arguments
  * @argv: An array of pointers
- *
  * Return: 0 on success.
  *
  * Description: If the argument count is incorrect - exit code 97.
@@ -94,6 +93,5 @@ int main(int argc, char *argv[])
 	free(buffer);
 	close_file(from);
 	close_file(to);
-
 	return (0);
 }
